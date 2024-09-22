@@ -1,0 +1,337 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --clr1:#e1e1e1;
+    --clr2:#1b1b1b;
+    --clr3:#2e2e2e;    
+} 
+.navbar-brand,.nav-link,.offcanvas-title{
+    color:var(--clr1) ;
+}
+.navbar .dropdown-toggle,
+.navbar .dropdown-item{
+    color: var(--clr1) ;
+}
+.btn-close-white{
+    filter: brightness(0) invert(1) ;
+}
+.navbar .btn{
+    background:var(--clr1);
+    color: var(--clr3);
+}
+
+
+#Home{
+    width: 100%;    
+    background-color: var(--clr1);
+    margin-top: 3em;
+}
+#Home .container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#Home .container .box{    
+    text-align: center;  
+    border: 1px solid var(--clr2);  
+    padding:5em;
+
+}
+#Home .container .box h1{  
+    font-size: 5em;  
+    font-weight: 100;
+}
+#Home .container .box h2{    
+    font-size: 2em;  
+    font-weight: 600;
+}
+#Home .container .box button{    
+    font-weight: 600;
+    padding: 0.75em;
+    color: var(--clr1);
+    border: none;
+    border-radius: 1.5em;
+    background: var(--clr2);
+    margin-top: 1em;  
+}
+#About{
+    width: 100%;    
+    background-color: var(--clr2);   
+    color: var(--clr1);
+}
+#About h2{
+    font-size: 3em;  
+    font-weight: 600;
+}
+#About h2::after{
+    content: '';
+    display: block;
+    background-color: var(--clr1);
+    height: 5px;
+    width: 1em;
+    border-radius: 1em;
+}
+#About .card{
+    background-color: var(--clr3);
+    color: var(--clr1);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1em;
+    font-size: 1.2em;
+    transition: transform 0.3s;   
+    user-select: none;
+}
+#About .card img{
+    width: 100px;
+    height: 100px;
+    margin-left: 1em;
+}
+#About .card:hover{
+    transform: scale(1.01);  
+}
+
+#b-Institution,#b-ClubLeadershipTeam{
+    width: 100%;      
+    background-color: var(--clr1);   
+    color: var(--clr3);  
+}
+
+#b-Institution .container-fluid,#b-ClubLeadershipTeam .container-fluid{
+    width: 100%; 
+    height: 100%;    
+}
+#b-Institution h2,#b-ClubLeadershipTeam h2,#Placements h2,#BehindWeCode h2{
+    font-size: 3em;  
+    font-weight: 600;
+}
+#b-Institution h2::after,#b-ClubLeadershipTeam h2::after ,#Placements h2::after,#BehindWeCode h2::after{
+    content: '';
+    display: block;
+    background-color: var(--clr3);
+    height: 5px;
+    width: 1em;
+    border-radius: 1em;
+}
+#b-Institution .benifits{
+    width: 100%;
+    height: 100%;
+    background: url(Assets/images/Group.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 1em;
+}
+
+#b-ClubLeadershipTeam .benifits{
+    width: 100%;
+    height: 100%;
+    background: url(Assets/images/leadership.png) no-repeat center center;
+    background-size: cover;
+    padding-top: 1em;
+}
+#b-Institution .benifits ul,#b-ClubLeadershipTeam .benifits ul{
+    font-size: 1.8em;
+    font-weight: 300;
+    padding: 1em;
+}
+#b-students{
+    width: 100%;
+    background-color: var(--clr3);  
+    color: var(--clr1);
+}
+#b-students h2{
+    font-size: 3em;  
+    font-weight: 600;
+}
+#b-students h2::after{
+    content: '';
+    display: block;
+    background-color: var(--clr1);
+    height: 5px;
+    width: 1em;
+    border-radius: 1em;
+}
+#b-students .card{    
+    background-color: var(--clr2);   
+    color: var(--clr1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+    min-height: 325px;
+    min-width: 300px;
+    transition: transform 0.5s;
+}
+#b-students .card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#b-students .card img{    
+    width: 5em;
+    height: 5em;
+}
+#b-students .card p{    
+    font-size: 0.8em;
+    font-weight: 300;    
+    
+}
+#b-students .card h3{  
+    font-size: 1.5em;
+    font-weight: 300;   
+}
+#Placements{
+    width: 100%;
+    background-color: var(--clr1);
+    color: var(--clr3);
+}
+#Placements .card{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1em;    
+    box-shadow:0 0 50px -10px #2e2e2e;  
+    transition: transform 0.5s;  
+}
+#Placements .card:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+#Placements .card img{
+    width: 10em;
+    height: 10em;   
+    border-radius: 50%;
+}
+
+#BehindWeCode{
+    width: 100%;
+    background: #fff;
+    color: var(--clr2);
+}
+#BehindWeCode .card{
+    width: 70em;
+    background: #fff;
+    color: var(--clr2);
+    display: flex;
+    flex-direction: row; 
+    align-items: center;       
+}
+#BehindWeCode .card p{
+    font-size: 2em;
+    font-weight: 500;   
+}
+#BehindWeCode .card ul{
+    font-size: 1.3em;
+    font-weight: 500;   
+}
+#BehindWeCode .card img{
+    width: 20em;
+    height: 20em;
+}
+
+footer{
+    width: 100%;
+    background: #000;
+    color: var(--clr1);
+}
+footer img{
+    width: 10em;
+    height: 10em;
+}
+footer h3{
+    font-size: 2.5em;
+    font-weight: 600;  
+}
+footer p{
+    font-size: 1em;
+    font-weight: 300; 
+}
+footer button{
+    padding: 0.7em;
+    border-radius: 0.5em;
+    font-weight: 600;
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    margin-top: 0.6em;
+}
+footer a{
+    color: var(--clr1);
+    font-size: 1em;
+    font-weight: 300;
+}
+footer .socialLinks a{
+    margin-left: 1em;
+}
+#Home .container .box button:hover i
+{
+   margin-left: 10px;
+}
+#Chapter{
+    width: 100%;
+    background: var(--clr2);
+    color: var(--clr1);
+}
+#Chapter h2{
+    font-size: 3em;  
+    font-weight: 600;
+}
+#Chapter p{
+    font-size: 1.5em;  
+    font-weight: 300;
+}
+#Chapter h2::after{
+    content: '';
+    display: block;
+    background-color: var(--clr1);
+    height: 5px;
+    width: 1em;
+    border-radius: 1em;
+}
+
+
+
+
+@media screen and (max-width: 425px) {
+    #Home .container .box{ 
+        padding:0em;    
+    }
+    #About .card{       
+        flex-direction: column;
+        justify-content: center;        
+        font-size: 1.2em;
+    }
+    #b-students .card {
+        margin-top: 1em;
+    }
+    #Placements .card{
+        margin-top: 1em;
+    }
+    #BehindWeCode .card{
+        width: 19em;       
+        flex-direction: column; 
+        align-items: center;   
+        justify-content: center;    
+    }
+    #BehindWeCode .card p{
+        font-size: 1.3em;        
+    }
+    #BehindWeCode .card ul{
+        font-size: 1em;        
+    }
+    #BehindWeCode .card img{
+        width: 15em;
+        height: 15em;
+    }
+    
+  }
